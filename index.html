@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Invasion</title>
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        color: #dddddd;
+        background-color: #222222;
+        width: 100%;
+        height: 100%;
+      }
+      table, th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Invasion</h1>
+    <h2>J & J Software</h2>
+
+    <script src="./sound.js"></script>
+
+    <script type="module">
+      import init from "./invasion.js";
+
+      async function run() {
+        await init("./invasion_bg.wasm");
+      }
+
+      run();
+    </script>
+
+    <script>
+      document.body.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    </script>
+
+    <h3>Controls</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Player 1</th>
+          <th>Player 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Move left</td>
+          <td>Left arrow</td>
+          <td>a</td>
+        </tr>
+        <tr>
+          <td>Move right</td>
+          <td>Right arrow</td>
+          <td>d</td>
+        </tr>
+        <tr>
+          <td>Move down</td>
+          <td>Down arrow</td>
+          <td>s</td>
+        </tr>
+        <tr>
+          <td>Move up</td>
+          <td>Up arrow</td>
+          <td>w</td>
+        </tr>
+        <tr>
+          <td>Fire primary laser</td>
+          <td>m</td>
+          <td>Left shift</td>
+        </tr>
+        <tr>
+          <td>Fire nuke</td>
+          <td>n</td>
+          <td>Left ctrl</td>
+        </tr>
+        <tr>
+          <td>Fire seeker missile</td>
+          <td>. (period)</td>
+          <td>z</td>
+        </tr>
+        <tr>
+          <td>Fire splitter laser</td>
+          <td>j</td>
+          <td>x</td>
+        </tr>
+        <tr>
+          <td>Use shield</td>
+          <td>,</td>
+          <td>s</td>
+        </tr>
+        <tr>
+          <td>Respawn</td>
+          <td>k</td>
+          <td>r</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

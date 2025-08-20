@@ -1,0 +1,41 @@
+LevelSpec (
+    name: "6",
+    enemy_spawn_odds: {
+        Laser: 0.0,
+        Beam: 0.0,
+        Seeker: 1.0,
+        Splitter: 0.0,
+    },
+    enemy_spawn_delay: Range (
+        start: 4.2,
+        end: 5.8,
+    ),
+    powerup_odds: {
+        Life: 1.0,
+        Shield: 8.0,
+        DoubleLaser: 0.0,
+        BeamLaser: 0.0,
+        Nuke: 0.0,
+        Seeker: 8.0,
+        Splitter: 0.0,
+    },
+    powerup_probability: 0.33,
+    enemy_fire_delay_standard: Range (
+        start: 1.7,
+        end: 3.3,
+    ),
+    enemy_fire_delay_beam: Range (
+        start: 0.8,
+        end: 1.7,
+    ),
+    enemy_fire_delay_seeker: Range (
+        start: 6.7,
+        end: 8.3,
+    ),
+    enemy_fire_delay_splitter: Range (
+        start: 6.7,
+        end: 8.3,
+    ),
+    level_duration: 30.0,
+    next_level: Some("7"),
+)

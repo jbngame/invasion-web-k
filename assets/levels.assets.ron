@@ -1,0 +1,17 @@
+({
+    "levels": Files (
+        // The first level listed will be the first level. After that the
+        // `next_level` variable is used
+        paths: [
+            "levels/01.level.ron",
+            "levels/02.level.ron",
+            "levels/03.level.ron",
+            "levels/04.level.ron",
+            "levels/05.level.ron",
+            "levels/06.level.ron",
+            "levels/07.level.ron",
+            "levels/08.level.ron",
+            "levels/09.level.ron",
+        ],
+    ),
+})
